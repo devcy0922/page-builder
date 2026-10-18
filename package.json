@@ -1,0 +1,26 @@
+{
+  "name": "page-builder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "영역을 클릭해 고치고 HTML 한 장으로 받는 노코드 페이지 편집기",
+  "type": "module",
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5182",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 5182",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "grapesjs": "0.22.16",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "vite": "^5.4.21",
+    "vitest": "^2.1.9"
+  }
+}
