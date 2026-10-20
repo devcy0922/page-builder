@@ -13,7 +13,7 @@ flowchart LR
 |---|---|---|
 | `src/start-page.js` | 처음 열 때의 예시 페이지(HTML·CSS)와 블록 목록 | 블록 id 중복 없음 |
 | `src/export.js` | 편집 결과를 HTML 문서 한 장으로 묶기, 파일 이름 정리 | vitest |
-| `src/editor.js` | GrapesJS 설정(기기, 스타일 섹터, 한국어 빈 상태 문구) | 브라우저 확인 |
+| `src/editor.js` | GrapesJS 설정(기기, 스타일 섹터, 한국어 문구, 번들한 아이콘·캔버스 글꼴) | 브라우저 확인 |
 | `src/App.vue` | 화면 껍데기와 빠른 조절 막대 | 브라우저 확인 |
 
 ## 로드맵

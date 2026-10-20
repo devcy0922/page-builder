@@ -73,6 +73,7 @@ onBeforeUnmount(() => editor.value?.destroy())
       <button type="button" class="btn" :disabled="!editor" @click="reset">처음 상태로</button>
       <button type="button" class="btn btn--primary" :disabled="!editor" @click="exportHtml">HTML 내려받기</button>
     </header>
+    <p class="narrow">좁은 화면에서는 영역 선택과 글자 크기만 바꿀 수 있습니다. 스타일 패널은 넓은 화면에서 열립니다.</p>
     <p v-if="error" class="err">편집기를 불러오지 못했습니다: {{ error }}</p>
     <main ref="host" class="host" />
   </div>
@@ -114,5 +115,15 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif
 .gjs-pn-devices-c { display: none; }
 .gjs-editor { font-family: inherit; }
 
-@media (max-width: 760px) { .devices { margin-left: 0; } }
+.narrow { display: none; }
+
+@media (max-width: 760px) {
+  .devices { margin-left: 0; }
+  /* 오른쪽 패널(15%)이 너무 좁아 글자가 한 자씩 꺾인다. 좁은 화면에서는 캔버스를 전체 폭으로 쓴다. */
+  .narrow { display: block; margin: 0; padding: 8px 16px; border-bottom: 1px solid var(--line); background: var(--wash); color: var(--soft); font-size: 13px; line-height: 1.5; }
+  .gjs-cv-canvas { width: 100%; }
+  .gjs-pn-commands { width: 100%; }
+  .gjs-pn-options { right: 0; }
+  .gjs-pn-views, .gjs-pn-views-container { display: none; }
+}
 </style>

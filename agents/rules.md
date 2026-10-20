@@ -1,7 +1,7 @@
 # page-builder 작업 기준
 
 > 전역 규칙 위에 덧붙는 이 레포 전용 규칙이다. 충돌하면 이 파일이 우선한다.
-> 사양 원본: `devcy0922.github.io/docs/lab/page-builder.md`. 구조를 바꾸면 [architecture.md](../architecture.md)를 먼저 고친다.
+> 소개 페이지: `devcy0922.github.io/docs/lab/page-builder.md`. 구조를 바꾸면 [architecture.md](../architecture.md)를 먼저 고친다.
 
 ## 목적
 
@@ -13,7 +13,8 @@
 - **내보낸 HTML은 외부 파일 없이 열린다.** `<style>`을 문서 안에 넣고, 편집기 전용 속성·스크립트를 남기지 않는다.
 - **서버가 없다.** 편집 내용은 브라우저 밖으로 나가지 않는다. 저장은 파일 내려받기(또는 이후 localStorage 개인 편의)로만.
 - 예시 페이지 문구는 가상 가게임을 유지한다.
-- 포트폴리오 프로토타입(`PageBuilder.vue`)과 동작이 갈라지면 이 레포를 기준으로 하고 차이를 README에 적는다.
+- **외부 CDN을 부르지 않는다.** CSS·아이콘·글꼴은 패키지에서 번들한다(GrapesJS `cssIcons: ''`).
+- 편집기의 기준은 이 레포 하나다. 포트폴리오 사이트에는 소개·화면 미리보기·저장소 링크만 둔다.
 
 ## 검증
 
