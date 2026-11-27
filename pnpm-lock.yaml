@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      fflate:
+        specifier: ^0.8.3
+        version: 0.8.3
       font-awesome:
         specifier: 4.7.0
         version: 4.7.0
@@ -463,6 +466,9 @@ packages:
   expect-type@1.4.0:
     resolution: {integrity: sha512-KfYbmpRm0VbLjEvVa9yGwCi9GI34xvi7A/HXYWQO65CSD2u3MczUJSuwXKFIxlGsgBQizV9q5J9NHj4VG0n+pA==}
     engines: {node: '>=12.0.0'}
+
+  fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
 
   font-awesome@4.7.0:
     resolution: {integrity: sha512-U6kGnykA/6bFmg1M/oT9EkFeIYv7JlX3bozwQJWiiLz6L0w3F5vBVPxHlwyX/vtNq1ckcpRKOB9f2Qal/VtFpg==}
@@ -972,6 +978,8 @@ snapshots:
       '@types/estree': 1.0.9
 
   expect-type@1.4.0: {}
+
+  fflate@0.8.3: {}
 
   font-awesome@4.7.0: {}
 

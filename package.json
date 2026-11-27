@@ -1,8 +1,8 @@
 {
   "name": "page-builder",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
-  "description": "영역을 클릭해 고치고 HTML 한 장으로 받는 노코드 페이지 편집기",
+  "description": "브라우저에서 편집하고 단일 HTML·정적 사이트 ZIP·프로젝트 JSON으로 저장하는 페이지 편집기",
   "type": "module",
   "packageManager": "pnpm@9.15.9",
   "engines": {
@@ -15,6 +15,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "fflate": "^0.8.3",
     "font-awesome": "4.7.0",
     "grapesjs": "0.22.16",
     "pretendard": "1.3.9",
