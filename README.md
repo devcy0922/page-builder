@@ -1,11 +1,12 @@
 # page-builder
 
-영역을 클릭해 글자·여백·색을 바꾸고, 결과를 **CSS까지 묶은 HTML 파일 한 장**으로 받는 노코드 페이지 편집기. 편집 엔진은 [GrapesJS](https://grapesjs.com)(BSD-3)를 그대로 씁니다.
+영역을 클릭해 글자·여백·색과 로컬 배경 이미지를 바꾸고, 결과를 **CSS와 이미지까지 포함한 HTML 파일 한 장**으로 받는 노코드 페이지 편집기. 편집 엔진은 [GrapesJS](https://grapesjs.com)(BSD-3)를 그대로 씁니다.
 
 - 설계: [architecture.md](architecture.md) · 작업 기준: [agents/rules.md](agents/rules.md)
 - 바로 써보기: https://devcy0922.github.io/page-builder/ (main 푸시 때 GitHub Pages로 배포)
 - 소개: https://devcy0922.github.io/lab/page-builder
-- 서버가 없습니다. 편집 내용은 브라우저 밖으로 나가지 않습니다.
+- 서버가 없습니다. 이미지 파일도 브라우저 안에서만 읽고, 내려받는 HTML에 포함합니다.
+- web-preview를 앱 코드나 런타임 의존성으로 가져오지 않습니다. 내보낸 HTML은 다른 미리보기 도구에서 열 수 있는 독립 파일입니다.
 
 ## 실행
 

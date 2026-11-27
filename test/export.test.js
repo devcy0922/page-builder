@@ -37,3 +37,14 @@ it('블록 id는 겹치지 않는다', () => {
   const ids = BLOCKS.map((b) => b.id)
   expect(new Set(ids).size).toBe(ids.length)
 })
+
+it('배경에 포함된 이미지 data URL을 단일 HTML 안에 보존한다', () => {
+  const dataUrl = 'data:image/webp;base64,AAAA'
+  const doc = buildHtmlDocument({
+    html: '<header class="hero">작업장</header>',
+    css: '.hero{background-image:url("' + dataUrl + '")}',
+    title: '작업장',
+  })
+  expect(doc).toContain(dataUrl)
+  expect(doc).toContain('<style>')
+})
